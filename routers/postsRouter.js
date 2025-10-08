@@ -5,8 +5,8 @@ const {
     getPost,
     updatePost,
     deletePost,
-} = require("./../controllers/posts");
-
+} = require("./../controllers/postsController");
+const router =Router();
 router.post("/", createPost);
 
 router.get("/", getPosts);
